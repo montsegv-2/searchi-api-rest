@@ -1,0 +1,37 @@
+###
+POST http://localhost:9000/api/store HTTP/1.1
+Content-Type: application/json 
+
+{
+    "name": "Tortas y burritos Panchitos",
+    "address": "Las Rosas 1228, Jardines del Llano, 28400 Coquimatlán, Col.",
+    "lat": 19.2174814,
+    "lng": -103.8062373,
+    "category": "food",
+    "image": "https://hildaskitchenblog.com/wp-content/uploads/2022/01/adobada-tacos-square.jpg"
+}
+
+
+###
+GET http://localhost:9000/api/stores HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/store/664af2e4abc5ec351b84df7b HTTP/1.1
+
+
+###
+PUT http://localhost:9000/api/store/664af2e4abc5ec351b84df7b HTTP/1.1
+Content-Type: application/json 
+
+{
+    "name": "Taqueria Don Jose",
+    "address": "De Los Tulipanes 1316, Jardines del Llano, 28400 Coquimatlán, Col.",
+    "lat": 19.2174814,
+    "lng": -103.8062373,
+    "category": "food",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPVnbLPO4ohu1YCEiJfbVkmdRWv41gsiEIQ&usqp=CAU"
+}
+
+###
+DELETE http://localhost:9000/api/store/664af6fbabc5ec351b84df82 HTTP/1.1
